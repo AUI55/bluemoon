@@ -1,0 +1,44 @@
+#Box{
+    width: 250px;
+    height: 250px;
+    border-color: black;
+    border: 1px solid;
+    font-size: 250px;
+    text-align: center;
+    background-color: aqua;
+    animation: mycolor;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    
+}
+
+@keyframes myRotate{
+    100%{transform: rotateZ(360deg);}
+}
+
+@keyframes myopacity{
+    100%{opacity: 0;}
+}
+
+
+@keyframes myslide{
+    from{margin-left: 100%;}
+    to {margin-left: 0%;}
+}
+
+@keyframes myscale{
+    50% {transform: scale(0.0,0.0);}
+}
+
+@keyframes mycolor{
+    20%{background-color: yellow;}
+    40%{background-color: rgb(50, 232, 50);}
+    60%{background-color: blue;}
+    80%{background-color: pink;}
+    100%{background-color: red;}
+    100%{transform: rotateZ(360deg);}
+    
+}
